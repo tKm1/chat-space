@@ -30,18 +30,22 @@
         &__name {
           font-size: 15px;
           padding: 20px 20px 5px 20px;
+          font-weight: bold;
         }
         &__message {
           font-size: 11px;
           padding: 0 0 20px 20px;
+          font-weight: bold;
         }
         &__name2 {
           font-size: 15px;
           padding: 20px 20px 5px 20px;
+          font-weight: bold;
         }
         &__message2 {
           font-size: 11px;
           padding: 0 0 20px 20px;
+          font-weight: bold;
         }
       }
     }
@@ -76,6 +80,44 @@
       background-color: #fafafa;
       width: calc(100vw - 300px);
       height: calc(100vh - 190px);
+      &__messages {
+        &__name {
+          padding: 46px 10px 10px 40px;
+          color: #434A54;
+          font-size: 16px;
+          font-weight: bold;
+          float: left;
+        }
+        &__data {
+          padding: 46px 0 10px 0;
+          color: #999999;
+          font-size: 12px;
+        }
+        &__text {
+          padding: 0 0 40px 40px;
+          color: #434A54;
+          font-size: 14px;
+          clear: both;
+        }
+        &__name2 {
+          padding: 0 10px 10px 40px;
+          color: #434A54;
+          font-size: 16px;
+          font-weight: bold;
+          float: left;
+        }
+        &__data2 {
+          padding: 0 0 10px 0;
+          color: #999999;
+          font-size: 12px;
+        }
+        &__text2 {
+          padding: 0 0 40px 40px;
+          color: #434A54;
+          font-size: 14px;
+          clear: both;
+        }
+      }
     }
     &__footer {
       background-color: #38AEF0;
