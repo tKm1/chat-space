@@ -12,13 +12,13 @@
       float: left;
       font-weight: bold;
       &__user {
-        color: #ffffff;
+        color: $mainWhiteColor;
         font-size: 16px;
         margin: 35px 20px 15px 20px;
         float: left;
       }
       &__btn {
-        color: #ffffff;
+        color: $mainWhiteColor;
         text-align: right;
         margin: 35px 20px 15px 20px;
       }
@@ -29,7 +29,7 @@
       width: 300px;
       float: left;
       &__groups {
-        color: #ffffff;
+        color: $mainWhiteColor;
         &__name {
           font-size: 15px;
           padding: 20px 20px 5px 20px;
@@ -66,8 +66,8 @@
         color: #333333;
         &__edit {
           float: right;
-          border: solid 1px #38aef0;
-          color: #38AEF0;
+          border: solid 1px $mainLightBlueColor;
+          color: $mainLightBlueColor;
           margin: -7px 40px 0 0;
           padding: 0 20px;
           line-height: 40px;
@@ -75,7 +75,7 @@
       }
       &__members {
         font-size: 12px;
-        color: #999999;
+        color: $mainGrayColor;
         margin: 0 0 0 40px;
       }
     }
@@ -86,55 +86,55 @@
       &__messages {
         &__name {
           padding: 46px 10px 10px 40px;
-          color: #434A54;
+          color: $mainBlackColor;
           font-size: 16px;
           font-weight: bold;
           float: left;
         }
         &__data {
           padding: 46px 0 10px 0;
-          color: #999999;
+          color: $mainGrayColor;
           font-size: 12px;
         }
         &__text {
           padding: 0 0 40px 40px;
-          color: #434A54;
+          color: $mainBlackColor;
           font-size: 14px;
           clear: both;
         }
         &__name2 {
           padding: 0 10px 10px 40px;
-          color: #434A54;
+          color: $mainBlackColor;
           font-size: 16px;
           font-weight: bold;
           float: left;
         }
         &__data2 {
           padding: 0 0 10px 0;
-          color: #999999;
+          color: $mainGrayColor;
           font-size: 12px;
         }
         &__text2 {
           padding: 0 0 40px 40px;
-          color: #434A54;
+          color: $mainBlackColor;
           font-size: 14px;
           clear: both;
         }
       }
     }
     &__footer {
-      background-color: gray;
+      background-color: $mainGrayColor;
       width: calc(100vw - 300px);
       height: 90px;
       &__textbox {
         box-sizing: border-box;
-        background-color: white;
+        background-color: $mainWhiteColor;
         margin: 20px 10px 20px 40px;
         height: 50px;
         width: calc(100vw - 515px);
         float: left;
         &__text {
-          color: #434A54;
+          color: $mainBlackColor;
           font-size: 16px;
           line-height: 50px;
           float: left;
@@ -145,12 +145,12 @@
         }
       }
       &__send {
-        background-color: #38AEF0;
+        background-color: $mainLightBlueColor;
         margin: 20px 40px 20px 15px;
         width: 100px;
         height: 50px;
         float: left;
-        color: white;
+        color: $mainWhiteColor;
         text-align: center;
         line-height: 50px;
       }
