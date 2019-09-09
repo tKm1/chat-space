@@ -4,27 +4,40 @@
     display: table-cell;
     &__header {
       background-color: #253141;
-      height: 100vh;
+      height: 100px;
       width: 300px;
-      color: #ffffff;
-      font-size: 16px;
-      padding: 35px 20px 15px 20px;
       float: left;
+      font-weight: bold;
+      &__user {
+        color: #ffffff;
+        font-size: 16px;
+        margin: 35px 20px 15px 20px;
+        float: left;
+      }
+      &__btn {
+        color: #ffffff;
+        text-align: right;
+        margin: 35px 20px 15px 20px;
+      }
     }
     &__contents {
       background-color: #2f3e51;
+      height: calc(100vh - 100px);
       width: 300px;
-      color: #ffffff;
+      float: left;
+      &__groups {
+        color: #ffffff;
+        font-size: 15px;
+      }
     }
   }
   .right {
     display: table-cell;
     &__header {
       width: calc(100vw - 300px);
-      height: 100vh;
+      height: 100px;
       float: right;
       font-size: 20px;
-      padding: 0 40px;
     }
     &__contents {
       background-color: #fafafa;
