@@ -27,7 +27,22 @@
       float: left;
       &__groups {
         color: #ffffff;
-        font-size: 15px;
+        &__name {
+          font-size: 15px;
+          padding: 20px 20px 5px 20px;
+        }
+        &__message {
+          font-size: 11px;
+          padding: 0 0 20px 20px;
+        }
+        &__name2 {
+          font-size: 15px;
+          padding: 20px 20px 5px 20px;
+        }
+        &__message2 {
+          font-size: 11px;
+          padding: 0 0 20px 20px;
+        }
       }
     }
   }
