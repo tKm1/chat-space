@@ -5,8 +5,6 @@
   padding: 0;
   .left {
     display: table-cell;
-    margin: 0;
-    padding: 0;
     &__header {
       background-color: #253141;
       height: 100px;
@@ -58,8 +56,6 @@
   .right {
     display: table-cell;
     float: right;
-    margin: 0;
-    padding: 0;
     &__header {
       width: calc(100vw - 300px);
       height: 100px;
@@ -133,16 +129,30 @@
       &__textbox {
         box-sizing: border-box;
         background-color: white;
-        text-align: right;
         margin: 20px 10px 20px 40px;
         height: 50px;
-        width: calc(100vw - 450px);
+        width: calc(100vw - 515px);
         float: left;
+        &__text {
+          color: #434A54;
+          font-size: 16px;
+          line-height: 50px;
+          float: left;
+        }
+        &__btn {
+          text-align: right;
+          line-height: 50px;
+        }
       }
       &__send {
         background-color: #38AEF0;
         margin: 20px 40px 20px 15px;
-        width: 45px;
+        width: 100px;
+        height: 50px;
+        float: left;
+        color: white;
+        text-align: center;
+        line-height: 50px;
       }
     }
   }
