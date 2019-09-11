@@ -13,9 +13,15 @@
       float: left;
     }
     &__btn {
-      color: $mainWhiteColor;
+      // color: $mainWhiteColor;
       text-align: right;
       margin: 0 20px 0 0;
+      i.fa {
+        color: white;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
     }
   }
   &__contents {
