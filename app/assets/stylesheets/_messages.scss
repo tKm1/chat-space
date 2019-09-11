@@ -19,9 +19,6 @@
       i.fa {
         color: white;
       }
-      a:hover{
-        text-decoration: none;
-      }
     }
   }
   &__contents {
@@ -30,16 +27,17 @@
     width: 300px;
     float: left;
     &__groups {
-      color: $mainWhiteColor;
       &__name {
         font-size: 15px;
         padding: 20px 20px 5px 20px;
         font-weight: bold;
+        color: $mainWhiteColor;
       }
       &__message {
         font-size: 11px;
         padding: 0 0 20px 20px;
         font-weight: bold;
+        color: $mainWhiteColor;
       }
     }
   }
