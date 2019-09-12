@@ -114,33 +114,52 @@
     background-color: $mainGrayColor;
     width: calc(100vw - 300px);
     height: 90px;
-    &__textbox {
-      box-sizing: border-box;
-      background-color: $mainWhiteColor;
-      margin: 20px 10px 20px 40px;
-      height: 50px;
-      width: calc(100vw - 515px);
-      float: left;
-      &__text {
-        color: $mainBlackColor;
-        font-size: 16px;
-        line-height: 50px;
+      .form__message {
+        margin: 20px 10px 20px 40px;
+        width: calc(100vw - 515px);
+        height: 50px;
         float: left;
       }
-      &__btn {
-        text-align: right;
+      .form__mask__image {
+        display: none;
+      }
+      .form__submit {
+        background-color: $mainLightBlueColor;
+        margin: 20px 40px 20px 15px;
+        width: 100px;
+        height: 50px;
+        float: left;
+        color: $mainWhiteColor;
+        text-align: center;
         line-height: 50px;
       }
-    }
-    &__send {
-      background-color: $mainLightBlueColor;
-      margin: 20px 40px 20px 15px;
-      width: 100px;
-      height: 50px;
-      float: left;
-      color: $mainWhiteColor;
-      text-align: center;
-      line-height: 50px;
-    }
+    // &__textbox {
+    //   box-sizing: border-box;
+    //   background-color: $mainWhiteColor;
+    //   margin: 20px 10px 20px 40px;
+    //   height: 50px;
+    //   width: calc(100vw - 515px);
+    //   float: left;
+    //   &__text {
+    //     color: $mainBlackColor;
+    //     font-size: 16px;
+    //     line-height: 50px;
+    //     float: left;
+    //   }
+    //   &__btn {
+    //     text-align: right;
+    //     line-height: 50px;
+    //   }
+    // }
+    // &__send {
+    //   background-color: $mainLightBlueColor;
+    //   margin: 20px 40px 20px 15px;
+    //   width: 100px;
+    //   height: 50px;
+    //   float: left;
+    //   color: $mainWhiteColor;
+    //   text-align: center;
+    //   line-height: 50px;
+    // }
   }
 }
