@@ -8,19 +8,7 @@
     .right__header__members
       Member: ◯◯
   .right__contents
-    .right__contents__messages
-      .right__contents__messages__name
-        test-user
-      .right__contents__messages__data
-        2019/09/09(Mon) 17:06:23
-      .right__contents__messages__text
-        こんにちは
-      .right__contents__messages__name2
-        test-user2
-      .right__contents__messages__data2
-        2019/09/09(Mon) 17:08:19
-      .right__contents__messages__text2
-        こんにちは！
+    = render @messages
   .right__footer
     .form
       = form_for [@group, @message] do |f|
@@ -30,10 +18,3 @@
             = fa_icon 'picture-o', class: 'icon'
             = f.file_field :image, class: 'hidden'
         = f.submit 'Send', class: 'form__submit'
-    -# .right__footer__textbox
-    -#   .right__footer__textbox__text
-    -#     type a message
-    -#   .right__footer__textbox__btn 
-    -#     = fa_icon 'photo'
-    -# .right__footer__send
-    -#   Send
