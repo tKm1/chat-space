@@ -85,29 +85,12 @@
         font-size: 12px;
       }
       &__text {
-        padding: 0 0 40px 40px;
+        // padding-left: 40px;
+        padding-left: 20px;
         color: $mainBlackColor;
         font-size: 14px;
         clear: both;
       }
-      // &__name2 {
-      //   padding: 0 10px 10px 40px;
-      //   color: $mainBlackColor;
-      //   font-size: 16px;
-      //   font-weight: bold;
-      //   float: left;
-      // }
-      // &__data2 {
-      //   padding: 0 0 10px 0;
-      //   color: $mainGrayColor;
-      //   font-size: 12px;
-      // }
-      // &__text2 {
-      //   padding: 0 0 40px 40px;
-      //   color: $mainBlackColor;
-      //   font-size: 14px;
-      //   clear: both;
-      // }
     }
   }
   &__footer {
@@ -121,7 +104,14 @@
       float: left;
     }
     .form__mask {
-      display: none;
+      float: left;
+      .icon {
+        text-align: right;
+        line-height: 50px;
+      }
+      .hidden{
+        display: none;
+      }
     }
     .form__submit {
       background-color: $mainLightBlueColor;
