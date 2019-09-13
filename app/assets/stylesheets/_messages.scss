@@ -98,15 +98,17 @@
     width: calc(100vw - 300px);
     height: 90px;
     .form__message {
-      margin: 20px 10px 20px 40px;
-      width: calc(100vw - 515px);
+      margin: 20px 0 20px 40px;
+      padding: 0 10px;
+      width: calc(100vw - 530px);
       height: 50px;
       float: left;
     }
     .form__mask {
       float: left;
+      height: 50px;
+      margin-top: 20px;
       .icon {
-        text-align: right;
         line-height: 50px;
       }
       .hidden{
@@ -115,7 +117,7 @@
     }
     .form__submit {
       background-color: $mainLightBlueColor;
-      margin: 20px 40px 20px 15px;
+      margin: 20px 40px 20px 0px;
       width: 100px;
       height: 50px;
       float: left;
