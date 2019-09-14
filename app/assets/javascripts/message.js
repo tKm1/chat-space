@@ -28,8 +28,8 @@ $(function(){
     })
     .done(function(data){
       var html = buildHTML(data);
-      $('right__contents').append(html)
-      $('right__contents').val('')
+      $('right__contents__messages').append(html)
+      $('right__contents').animate({scrollTop:0});
     })
     .fail(function(){
       alert('error');
