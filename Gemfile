@@ -9,7 +9,7 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.7', '>= 5.0.7.2'
 # Use mysql as the database for Active Record
-gem 'mysql2', '>= 0.3.18', '< 0.6.0'
+gem 'mysql2', '0.4.10'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -38,6 +38,11 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+  gem 'rspec-rails', '~> 3.5'
+  gem 'rails-controller-testing'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'capybara'
 end
 
 group :development do
