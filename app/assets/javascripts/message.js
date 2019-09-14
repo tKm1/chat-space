@@ -27,7 +27,7 @@ $(function(){
       contentType: false
     })
     .done(function(data){
-      var html = buildHTML(data);
+      var html = buildHTML(message);
       $('right__contents__messages').append(html)
       $('right__contents').animate({scrollTop:0});
     })
