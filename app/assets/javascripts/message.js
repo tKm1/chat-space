@@ -30,6 +30,8 @@ $(function(){
       var html = buildHTML(message);
       $('.right__contents__messages').append(html)
       $('.right__contents').animate({scrollTop:0});
+      $('.form__message').val('')
+      $('.form__submit').attr('disabled', false);
     })
     .fail(function(){
       alert('error');
