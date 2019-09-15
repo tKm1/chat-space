@@ -1,7 +1,7 @@
 $(function(){
   function buildHTML(message){
     var content = message.content ? `${message.content} ` : ''
-    var image = message.image ? `<img class ='lower-message__image' src=${message.image.url}> ` : ''
+    var image = message.image ? `<img class ='lower-message__image' src=${message.image}> ` : ''
     var html = `<div class = "right__contents__messages">
                   <div class = "right__contents__messages__name">
                     ${message.user_name}
@@ -32,7 +32,7 @@ $(function(){
       var html = buildHTML(message);
       $('.right__contents').append(html)
       $('.right__contents').animate({scrollTop: $('.right__contents')[0].scrollHeight}),
-      $('.form__message').reset('')
+      $('form')[0].reset();
       $('.form__submit').attr('disabled', false);
     })
     .fail(function(){
