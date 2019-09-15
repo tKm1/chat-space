@@ -1,6 +1,7 @@
 $(function(){
   function buildHTML(message){
-    var message_image = '';
+    var content = message.content ? `${message.content} ` : ''
+    var image = message.image ? `<img class ='lower-message__image' src=${message.image.url}> ` : ''
     var html = `<div class = "right__contents__messages">
                   <div class = "right__contents__messages__name">
                     ${message.user_name}
@@ -9,8 +10,8 @@ $(function(){
                     ${message.date}
                   </div>
                   <div class = "right__contents__messages__text">
-                    ${message.content}
-                    ${message_image}
+                    ${content}
+                    ${image}
                   </div>
                 </div>`
     return html;
