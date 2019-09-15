@@ -32,7 +32,7 @@ $(function(){
       var html = buildHTML(message);
       $('.right__contents').append(html)
       $('.right__contents').animate({scrollTop: $('.right__contents')[0].scrollHeight}),
-      $('.form__message').val('')
+      $('.form__message').reset('')
       $('.form__submit').attr('disabled', false);
     })
     .fail(function(){
