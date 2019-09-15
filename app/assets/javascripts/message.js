@@ -2,13 +2,13 @@ $(function(){
   function buildHTML(message){
     var html = `<div class = "right__contents__messages">
                   <div class = "right__contents__messages__name">
-                    ${message.name}
+                    ${message.user_name}
                   </div>
                   <div class = "right__contents__messages__data">
                     ${message.date}
                   </div>
                   <div class = "right__contents__messages__text">
-                    ${message.comtent}
+                    ${message.content}
                     ${message.image}
                   </div>
                 </div>`
@@ -26,10 +26,10 @@ $(function(){
       processData: false,
       contentType: false
     })
-    .done(function(data){
+    .done(function(message){
       var html = buildHTML(message);
-      $('right__contents__messages').append(html)
-      $('right__contents').animate({scrollTop:0});
+      $('.right__contents__messages').append(html)
+      $('.right__contents').animate({scrollTop:0});
     })
     .fail(function(){
       alert('error');
