@@ -1,5 +1,6 @@
 $(function(){
   function buildHTML(message){
+    var message_image = '';
     var html = `<div class = "right__contents__messages">
                   <div class = "right__contents__messages__name">
                     ${message.user_name}
@@ -9,7 +10,7 @@ $(function(){
                   </div>
                   <div class = "right__contents__messages__text">
                     ${message.content}
-                    ${message.image}
+                    ${message_image}
                   </div>
                 </div>`
     return html;
@@ -29,7 +30,7 @@ $(function(){
     .done(function(message){
       var html = buildHTML(message);
       $('.right__contents').append(html)
-      $('.right__contents').animate({scrollTop:0});
+      $('.right__contents').animate({scrollTop: $('.right__contents')[0].scrollHeight}),
       $('.form__message').val('')
       $('.form__submit').attr('disabled', false);
     })
