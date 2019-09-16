@@ -12,7 +12,7 @@ $(function() {
 
   function appendNoUserName(msg) {
     var html = `<p>
-                  <div class="chat-group-user__name'>${fail_comment}</div>
+                  <div class="chat-group-user__name'>${msg}</div>
                 </p>`
     search_list.append(html);
   }
@@ -34,8 +34,11 @@ $(function() {
         });
       }
       else {
-        appendNoUserName("一致するメンバーはいません");
+        appendNoUserName("一致する名前はありません");
       }
+    })
+    .fail(function() {
+      alert('名前検索に失敗しました');
     })
   });
 });
