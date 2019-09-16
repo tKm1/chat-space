@@ -19,15 +19,15 @@ $(function() {
 
   $("#user-search-field").on("keyup", function() {
     var input = $("#user-search-field").val();
-
+    if (input.length) {
     $.ajax({
       type: 'GET',
       url: '/users',
       data: { name : input },
       dataType: 'json'
     })
-
     .done(function(users) {
+      $("#user-search-result").empty();
       if (users.length !== 0) {
         users.forEach(function(user){
           appendUserName(user);
@@ -40,5 +40,8 @@ $(function() {
     .fail(function() {
       alert('名前検索に失敗しました');
     })
+    } else {
+    $("#user-search-result").empty();
+    }
   });
 });
