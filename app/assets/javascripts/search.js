@@ -44,4 +44,27 @@ $(function() {
     $("#user-search-result").empty();
     }
   });
+
+  var search_list_add = $("#chat-group-users");
+
+  function appendUserNameAdd(user_name, user_id) {
+    var html =`<div class='chat-group-user clearfix'>
+                <input name='group[user_ids][]' type='hidden' value='${user_id}'>
+                <p class='chat-group-user__name'>${user_name}</p>
+                <a class='user-search-remove chat-group-user__btn chat-group-user__btn--remove'>削除</a>
+              </div>`
+    search_list_add.append(html);
+  }
+
+  $("#user-search-result").on("click", ".chat-group-user__btn--add", function() {
+    var user_id = $(this).data("user-id");
+    var user_name = $(this).data("user-name");
+    appendUserNameAdd(user_name, user_id);
+    $(this).parent.remove();
+  });
+
+  $("#chat-group-users").on("click", ".chat-group-user__btn--remove", function () {
+    $(this).parent.remove();
+  });
+
 });
