@@ -2,11 +2,13 @@
 .right
   .right__header
     .right__header__group
-      group_sample
+      = @group.name
       .right__header__group__edit
-        edit
+        = link_to "edit", edit_group_path(params[:group_id]), method: :get
     .right__header__members
-      Member: ◯◯
+      Member: 
+      - @group.users.each do |user|
+        = user.name
   .right__contents
     = render @messages
   .right__footer
