@@ -60,11 +60,11 @@ $(function() {
     var user_id = $(this).data("user-id");
     var user_name = $(this).data("user-name");
     appendUserNameAdd(user_name, user_id);
-    $(this).parent.remove();
+    $(this).parent().remove();
   });
 
-  $("#chat-group-users").on("click", ".chat-group-user__btn--remove", function () {
-    $(this).parent.remove();
+  $("#chat-group-users").on("click", ".chat-group-user__btn--remove", function() {
+    $(this).parent().remove();
   });
 
 });
