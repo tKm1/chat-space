@@ -1,5 +1,5 @@
 = render partial: "shared/side_bar"
-.right
+.right{data: {'group-id': "#{@group.id}"}}
   .right__header
     .right__header__group
       = @group.name
