@@ -39,9 +39,10 @@ $(function() {
     })
     .fail(function() {
       alert('名前検索に失敗しました');
-    })
-    } else {
-    $("#user-search-result").empty();
+    });
+    }
+    else {
+      $("#user-search-result").empty();
     }
   });
 
