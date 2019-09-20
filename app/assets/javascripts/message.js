@@ -41,8 +41,7 @@ $(function(){
   })
 
   var reloadMessages = function(){
-    // debugger
-    last_message_id = $('.right__contents__messages').last().data('id');
+    var last_message_id = $('.right__contents__messages').last().data('id');
     // if (location.href.match(/ /)){
       $.ajax({
         url: 'api/messages/',
@@ -51,7 +50,6 @@ $(function(){
         data: {id: last_message_id}
       })
       .done(function(messages) {
-        console.log('success');
         var insertHTML = '';
         if (messages.length !== 0 ){
           messages.forEach(function(message){
@@ -62,7 +60,6 @@ $(function(){
         };
       })
       .fail(function() {
-        console.log('error');
       });
     // };
   };
