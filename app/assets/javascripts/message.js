@@ -42,7 +42,7 @@ $(function(){
 
   var reloadMessages = function(){
     var last_message_id = $('.right__contents__messages').last().data('id');
-    // if (location.href.match(/ /)){
+    if (location.href.match(/\/groups\/\d+\/messages/)){
       $.ajax({
         url: 'api/messages/',
         type: 'GET',
@@ -61,7 +61,7 @@ $(function(){
       })
       .fail(function() {
       });
-    // };
+    };
   };
   setInterval(reloadMessages, 5000);
 });
