@@ -56,12 +56,10 @@
       &__edit {
         float: right;
         border: solid 1px $mainLightBlueColor;
+        color: $mainLightBlueColor;
         margin: -7px 40px 0 0;
         padding: 0 20px;
         line-height: 40px;
-      }
-      &__edit:link {
-        color: $mainLightBlueColor;
       }
     }
     &__members {
