@@ -4,7 +4,7 @@
     .right__header__group
       = @group.name
       .right__header__group__edit
-        = link_to "edit", edit_group_path(params[:group_id]), method: :get
+        = link_to "Edit", edit_group_path(params[:group_id]), method: :get, class: 'btn'
     .right__header__members
       Member: 
       - @group.users.each do |user|

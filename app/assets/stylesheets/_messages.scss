@@ -60,6 +60,9 @@
         margin: -7px 40px 0 0;
         padding: 0 20px;
         line-height: 40px;
+        .btn {
+          color: $mainLightBlueColor;
+        }
       }
     }
     &__members {
